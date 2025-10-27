@@ -1,8 +1,7 @@
 import React from 'react'
-const words = [
-    {text: 'Ideas', imgPath: '/images/ideas.svg'},
-    {text: 'Concepts', imgPath: '/images/concepts.svg'}
-]
+import { words } from '../constants'
+
+
 
 const Hero = () => {
   return (
