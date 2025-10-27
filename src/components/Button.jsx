@@ -1,11 +1,14 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({text, className, id}) => {
   return (
-    <a className='cta-wrapper'>
-        <div className='cta-group group' >
+    <a className={`${className ?? ''}cta-wrapper`}>
+        <div className='cta-button group' >
             <div className='bg-circle'/>
-            <p className='text'>See my Work</p>
+            <p className='text'>{text}</p>
+            <div className='arrow-wrapper'>
+                <img src='/images/arrow-down.svg' alt='arrow'/>
+            </div>
 
         </div>
 
