@@ -1,5 +1,6 @@
 import React from 'react'
 import { words } from '../constants'
+import Button from '../components/Button'
 
 
 
@@ -37,6 +38,7 @@ const Hero = () => {
                     <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
                         Hi, I'm Rashmi Wijemanna, a developer based in Croatia with a passion for code.
                     </p>
+                    <Button/>
                 </div>
             </header>
         </div>
