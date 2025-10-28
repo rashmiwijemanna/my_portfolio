@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 import { MeshStandardMaterial } from 'three'
 import { Room } from './Room'
 import HeroLights from './HeroLights'
+import Particles from '../Particle'
 
 const HeroExperience = () => {
     const isTablet= useMediaQuery({query: '(max-width: 1024px)' });
@@ -22,6 +23,7 @@ const HeroExperience = () => {
 
        />
        <HeroLights/>
+       <Particles count={100}/>
 
        <group scale={isMobile? 0.7 : 1}
        position={[0, -3.5, 0]}
